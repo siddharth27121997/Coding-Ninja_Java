@@ -1,0 +1,21 @@
+
+public class Subsequence_again {
+public static String findsubsequence(String str)
+{
+	if(str.length()==0)
+	{
+		return str;
+	}
+	String small_Ans=findsubsequence(str.substring(1)); 
+return small_Ans;
+
+	
+}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+String str="xyz";
+findsubsequence(str);
+
+}
+}

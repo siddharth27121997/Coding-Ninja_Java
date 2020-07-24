@@ -1,0 +1,13 @@
+
+public class ExplictTypecasting {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int i =32;
+		char c = (char)i;
+		System.out.println(c);
+		
+	}
+
+}

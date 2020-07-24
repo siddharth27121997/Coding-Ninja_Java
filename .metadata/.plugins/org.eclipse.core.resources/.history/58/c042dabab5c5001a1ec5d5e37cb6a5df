@@ -1,0 +1,12 @@
+import java.util.*;
+public class Baiscs {
+
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		ArrayList<Integer> list1= new ArrayList<Integer> ();
+		System.out.println(list1.size());
+	}
+
+}

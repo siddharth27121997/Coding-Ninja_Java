@@ -1,0 +1,42 @@
+import java.util.*;
+public class FarenTocel {
+
+	public static void far(int s,int e,int w)
+	{
+		int f =s;
+		while(f<=e)
+		{
+			int c =(int)(5.0/9)*(f-32);
+			System.out.println(f+"\t"+c);
+			f=f+w;
+		}
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc = new Scanner(System.in);
+	int s=sc.nextInt();
+	int e=sc.nextInt();
+	int w = sc.nextInt();
+	far(s,e,w);
+	
+	}
+
+}

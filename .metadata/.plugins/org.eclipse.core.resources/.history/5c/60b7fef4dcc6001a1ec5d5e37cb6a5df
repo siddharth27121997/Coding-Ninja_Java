@@ -1,0 +1,60 @@
+
+public class Init {
+
+	public static void capital(String str)
+	{
+		String output="";
+		boolean div = true;
+		int start=0;
+		if(Character.isUpperCase(str.charAt(0)))
+		{
+			div=true;
+	    output=str.charAt(0)+"";
+		}
+		else
+		{
+			div=false;
+			char p = Character.toUpperCase(str.charAt(0));
+			output=p+"";
+			
+		}
+		for(int i=1;i<str.length();i++)
+		{
+			output+=str.charAt(i)+"";
+			if(str.charAt(i)==' ')
+			{
+				start=i+1;
+				if(Character.isUpperCase(str.charAt(start)))
+				{
+					div= true;
+					output+=+str.charAt(start)+"";
+				}
+				else
+				{
+					div=false;
+					output+=+Character.toUpperCase(str.charAt(start))+"";
+				}
+				
+				
+			}
+			start=;
+		}
+		if(div==true)
+		{
+			System.out.println("All capital");
+		}
+		if(div==false)
+		{
+			System.out.print(output);
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	String str= "Work Hard to earn";
+	capital(str);
+	}
+
+}

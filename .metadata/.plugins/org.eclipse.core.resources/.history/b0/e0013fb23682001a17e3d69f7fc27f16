@@ -1,0 +1,30 @@
+
+public class ExplictTypecasting {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int i =97;
+		char c = (char)i;
+		System.out.println(c);
+		long d = 13494798508L;
+		int a= (int)d;
+		System.out.println(a);
+		float f= 109.3456f;
+		char z= (char) f;
+		double l=f;
+		System.out.println(z);
+		double q= 2.3454325;
+		float x=(float)q;
+		System.out.println(x);
+		String s= "abc";
+		char w= s.charAt(0);
+		int p=(int) w;
+		System.out.println(p);
+		System.out.println('w'+32);
+	int j = 'c';
+		System.out.println(j);
+	System.out.println('a'+32);
+	}
+
+}

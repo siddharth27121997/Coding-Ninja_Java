@@ -1,0 +1,13 @@
+
+public class Datatypecoversation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int a = 456;
+		double c = a;
+		
+System.out.println(c);
+	}
+
+}

@@ -1,0 +1,18 @@
+import java.util.*;
+public class Logicaloperator {
+public static void main(String args[]) {
+	Scanner sc= new Scanner(System.in);
+	int a=sc.nextInt();
+	double b = sc.nextInt();
+	int c = sc.nextInt();
+	boolean d =( a>b)&&(c<a);
+	boolean e= !((a>c)&(a>c));	
+	System.out.println(a+" "+b);
+	System.out.println(a/b);
+System.out.println(d);
+System.out.println(e);
+
+
+
+}
+}

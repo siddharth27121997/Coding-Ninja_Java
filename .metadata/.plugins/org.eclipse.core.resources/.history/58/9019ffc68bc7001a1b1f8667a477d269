@@ -1,0 +1,25 @@
+
+public class Subsequence_again {
+public static String[] findsubsequence(String str)
+{
+	if(str.length()==0)
+	{
+		String small_Ans[]= {" "};
+	return small_Ans;
+	}
+	String small_Ans[]=findsubsequence(str.substring(1)); 
+
+	return small_Ans;
+}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+String str="xyz";
+String ans[]=findsubsequence(str);
+for(int i=0;i<ans.length;i++)
+{
+	System.out.println(ans[i]+" ");
+}
+	}
+
+}

@@ -1,0 +1,20 @@
+
+public class Print_the_list<T> {
+
+	T data;
+	Print_the_list <T>next;
+	 Print_the_list(T data)
+	 {
+		 this.data=data;
+	      next=null;
+	 }
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ Print_the_list<Integer> node1= new Print_the_list<>(10);
+		System.out.println(node1.data);
+		
+	}
+
+}

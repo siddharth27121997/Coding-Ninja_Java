@@ -1,0 +1,23 @@
+package Introduction_To_Recursion;
+
+public class Mutiply_2_Number {
+	
+	public static int multiply_no(int m,int n)
+	{
+		if(m==1)
+		{
+			return m ;
+		}
+		return m+multiply_no(m-1,n);
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int m=3;
+		int n=4;
+		System.out.println(multiply_no(m,n));
+	}
+
+}

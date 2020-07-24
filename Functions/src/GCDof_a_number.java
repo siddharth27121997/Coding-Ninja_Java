@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class GCDof_a_number {
+	
+	
+	public static int GCD_of_a_number(int n1,int n2)
+	{
+		
+		int gcd=1;
+		int a = Math.min(n1, n2);
+		
+		for(int i=2;i<=a;i++)
+		{
+			if(n1%i==0 && n2%i==0)
+			{
+				gcd=i;
+			}
+			
+		}
+		return gcd;
+		
+		
+	
+	}
+
+
+public static void main(String args[])
+{
+Scanner sc = new Scanner(System.in);
+
+int n1=sc.nextInt();
+int n2 =sc.nextInt();
+int p=GCD_of_a_number( n1,n2);
+int lcm=((n1*n2)/GCD_of_a_number( n1,n2));
+
+System.out.println("HCF is :"+" " +p);
+System.out.println("LCM is :"+" " +lcm);
+}
+}

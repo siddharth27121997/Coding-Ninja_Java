@@ -1,0 +1,33 @@
+
+public class Insertion_Sort {
+
+	public static int insertion(int arr[])
+	{ 
+		int max=Integer.MIN_VALUE;
+		int second_max=Integer.MIN_VALUE;
+		for(int i =0;i<arr.length;i++)
+		{
+			if(arr[i]>max)
+			{
+				second_max=max;
+				max=arr[i];
+				
+			}
+			if(arr[i]>second_max && max>arr[i] && max!=arr[i])
+			{
+				second_max=arr[i];
+			}
+			
+			
+		}
+		return second_max;
+	}
+				
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int arr[]= {4,5,3,1,5,3,4,3,4,3566,55};
+		System.out.println(insertion(arr));
+		
+
+}
+}

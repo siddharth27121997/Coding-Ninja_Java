@@ -1,0 +1,78 @@
+import java.util.*;
+public class Init {
+
+	public static void capital(String str)
+	{
+		int count=0;
+		int word=0;
+		boolean flag = true;
+		String output="";
+		int i=1;
+		int temp=0;
+		int q=1;
+		int start=0;
+		if(Character.isUpperCase(str.charAt(0)))
+		{
+		flag=true;
+	    output=str.charAt(0)+"";
+	    count++;
+		}
+		else
+		{
+			flag=false;
+			char p = Character.toUpperCase(str.charAt(0));
+			output=p+"";
+			
+		}
+		while(i<str.length())
+		{
+			
+			
+			if(str.charAt(i)==' ')
+			{
+			
+				word++;
+				 start=i+1;
+                output=output+str.substring(q,start)+"";			
+				if(Character.isUpperCase(str.charAt(start)))
+				{
+			flag= true;
+			count++;
+					output+=str.charAt(start)+"";
+				}
+				else
+				{
+					flag=false;
+					output+=Character.toUpperCase(str.charAt(start))+"";
+				}
+             				
+				
+			}
+			q=start+1;
+			i++;
+		 temp=q;
+		}
+		word++;
+		output=output+str.substring(temp,str.length());
+		
+		if(word==count)
+		{
+			System.out.println("All Capital");
+		}
+		else
+		{
+			System.out.print(output);
+		}
+		System.out.println();
+		System.out.println(word);
+		System.out.println(count);
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	String str= "Work Hard Earn";
+	capital(str);
+	}
+
+}
